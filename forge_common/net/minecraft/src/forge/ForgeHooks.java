@@ -89,6 +89,8 @@ public class ForgeHooks {
 		if(toolInit) return;
 		toolInit=true;
 
+		// This is wacky
+
 		MinecraftForge.setToolClass(Item.pickaxeWood,"pickaxe",0);
 		MinecraftForge.setToolClass(Item.pickaxeStone,"pickaxe",1);
 		MinecraftForge.setToolClass(Item.pickaxeSteel,"pickaxe",2);
@@ -135,6 +137,10 @@ public class ForgeHooks {
 		}
 
 		// TODO: add other tool tables.
+	}
+
+	public static void touch() {
+		// touch :)
 	}
 
 	public static final int majorVersion=1;
