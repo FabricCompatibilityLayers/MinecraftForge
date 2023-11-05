@@ -8,8 +8,8 @@ mcarchive, and the compilation patch is only made for version 1.
 Copy the forge folder to your mcp folder, so it looks like this:
 mcp/forge
 
-Run setup.bat. If you did everything correctly then everything
-should be successful, and MCP should compile successfuly for both
+Run setup.bat. If you did everything correctly, then everything
+should be successful, and MCP should compile successfully for both
 client and server at the end of the setup program.
 
 
