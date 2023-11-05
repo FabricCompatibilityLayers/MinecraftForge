@@ -61,6 +61,10 @@ public class ForgeHooks {
 		Object[] ta=tc.toArray();
 		String cls=(String)ta[0]; int hvl=(Integer)ta[1];
 
+		if (cls.equalsIgnoreCase("paxel")) {
+			return true;
+		}
+
 		Integer bhl=(Integer)toolHarvestLevels.get(Arrays.asList(
 			bl.blockID,md,cls));
 		if(bhl==null) return itemstack.canHarvestBlock(bl);
@@ -86,6 +90,9 @@ public class ForgeHooks {
 		if(tc==null) return false;
 		Object[] ta=tc.toArray();
 		String cls=(String)ta[0];
+
+		if (cls.equalsIgnoreCase("paxel"))
+			return true;
 
 		return toolEffectiveness.contains(Arrays.asList(
 			bl.blockID,md,cls));
