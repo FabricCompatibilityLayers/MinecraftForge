@@ -9,7 +9,7 @@ Copy the forge folder to your mcp folder, so it looks like this:
 mcp/forge
 
 Run setup.bat. If you did everything correctly then everything
-should be succesful, and MCP should compile successfuly for both
+should be successful, and MCP should compile successfuly for both
 client and server at the end of the setup program.
 
 
