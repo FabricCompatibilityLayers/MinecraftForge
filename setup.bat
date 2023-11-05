@@ -1,3 +1,4 @@
+@echo off
 cd ..
 
 rmdir /S /Q src
@@ -10,8 +11,9 @@ cmd /C decompile.bat
 cd src
 ..\runtime\bin\python\python_mcp ..\forge\lfcr.py ..\forge\modLoaderMP.patch ..\forge\modLoaderMP-win.patch
 ..\runtime\bin\applydiff.exe -uf -p2 < ..\forge\modLoaderMP-win.patch
+..\runtime\bin\python\python_mcp ..\forge\lfcr.py ..\forge\mlprop.patch ..\forge\mlprop-win.patch
+..\runtime\bin\applydiff.exe -uf -p2 < ..\forge\mlprop-win.patch
 cd ..
-cmd /C recompile.bat
 cmd /C updatemd5.bat
 )
 
